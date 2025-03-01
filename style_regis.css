@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(125deg, rgb(10, 0, 83), rgb(20, 13, 13));
+    padding: 10px;
+}
+
+/* for box and box shadow */
+
+.container{
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    max-width: 1200px;
+    width: 100%;
+    height: 80%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    border: 1px solid #1aff01;
+    box-shadow: 10px 5px 25px;
+    /* background: linear-gradient(135deg,black, black); */
+}
+
+/* for heading "Registration' */
+
+.container .heading{
+    font-size: 25px;
+    font-weight: 700;
+    position:relative;           
+    padding-left: 70%;
+    font: "Aptos Display";
+}
+
+/* underline after 'Registration' heading */
+
+.container .heading::before{
+    content:'';
+    position:absolute;
+    height: 9%;
+    right: 0px;
+    left: 0px;
+    bottom: -23px;
+    width: 97%;
+    background: linear-gradient(135deg,rgb(116, 60, 122),#3c2666 );
+    
+}
+
+.container form .card-details{
+    margin-top: 25px;
+} 
+
+/* for input boxes movement */
+
+.card-details .card-box{
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 70%;
+    padding-right: 5%;
+}
+
+/* for input boxes shape and colors */
+
+.card-details .card-box input{
+    position: relative;
+    height: 25px;
+    width: 100%;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 6px;
+    
+}
+
+.card-details .card-box input:focus,
+.card-details .card-box input:valid{
+    border-color: #1f0b45;       
+}
+
+/* for gender button movement */
+
+.gender-button {
+    width: 100%;
+    column-gap: 10px;
+    margin-top: 10px;
+    padding-left: 70%;
+    padding-right: 5%;
+}
+
+/* for "Register" button shape and color */
+
+.gender-button .register input{
+    width: 150px;
+    padding: 3px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    border: 2px solid green;
+    border-radius: 6px;
+    background-color: rgba(1, 31, 60, 0.827);
+    color: #fff;
+    margin-top: 15px;
+}
+
+/* for "Register" button color change */
+
+.gender-button .register input:hover{
+    background: linear-gradient(-135deg,#1f0b45,green );
+
+}
+
+
+/* for Background image(Boy amd Girl Bali) */
+
+.container .bgimage img{
+    position:absolute;
+    transform: translate(5%,-103%);
+    width: 700px;
+    height: 400px;
+}
+
+/* for EdGuide logo image */
+
+.container .logoimage img{
+    width:152px;
+    height: 154px;
+    transform: translate(-10%,-381%);
+}
+
+.card-details::-webkit-scrollbar{
+    width: 0;
+}
+
+/* .card-box .details{
+
+} */

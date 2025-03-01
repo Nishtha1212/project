@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    color: #fff;
+    display: flex;
+    height: 100vh;
+    justify-content:center;
+    align-items:center;
+    background: linear-gradient(135deg, rgb(14, 13, 20), rgb(0, 149, 255));
+    padding: 10px;
+}
+
+/* for box and box shadow */
+
+.container{
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    max-width: 1200px;
+    width: 100%;
+    height: 80%;
+    padding: 25px 30px;
+    border-radius: 25px;
+    border: 1px solid #5317c3;
+    box-shadow: 10px 5px 25px;
+}
+
+/* for heading "Login' */
+
+.container .heading{
+    font-size: 30px;
+    font-weight: 700;
+    position:relative;          
+    padding-left: 70%;
+    /* bottom: -60px; */
+    
+}
+
+/* underline after 'LOGIN' heading */
+
+.container .heading::before{
+    content:'';
+    position:absolute;
+    height: 9%;
+    right: 0px;
+    left: 0px;
+    bottom: -29px;
+    width: 100%;
+    background: linear-gradient(130deg,rgb(223, 174, 246),#474153 );
+    
+}
+
+.container form .card-details{
+    margin-top: 25px;
+} 
+
+/* for input boxes movement */
+
+.card-details .card-box{
+    width: 100%;
+    margin-top: 29px;
+    padding-left: 70%;
+    padding-right: 5%;
+    transform:translate(30,90);
+
+}
+
+/* for input boxes shape and colors */
+
+.card-details .card-box input{
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    
+}
+
+.card-details .details{
+    width: 100%;
+    margin-top: 20px;
+    transform:translate(30,30);
+   
+
+}
+/* for "Login" button shape and color */
+
+.card-details .login input{
+    width: 150px;
+    padding: 7px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    border:none;
+    border-radius: 6px;
+    background: linear-gradient(-135deg,rgb(4, 0, 255),rgb(242, 67, 255));
+    color: #fff;
+    margin-top: 28px;
+    margin-left: 860px;
+}
+
+/* for "Register" button color change */
+
+.form .login input:hover{
+    background: linear-gradient(-135deg,rgb(50, 218, 255),rgb(4, 0, 255)) ;
+
+}
+
+
+
+/* for Background image */
+
+.container .bgimage img{
+    position:absolute;
+    transform: translate(8%,-88%);
+    width: 670px;
+    height: 450px;
+}
+
+/* for EdGuide logo image */
+
+.container .logoimage img{
+    width:152px;
+    height: 154px;
+    transform: translate(-10%,-331%);
+
+}
+
+.card-details::-webkit-scrollbar{
+    width: 0;
+}

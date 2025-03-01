@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-style.css">
+
+    <title>Login Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">Login</div>
+        <form action="#" class="form">
+            <div class="card-details">
+                <div class="card-box">
+                    <br>
+                    <br>
+                    <input type="text" placeholder="Enter Your Name" style="font-size: 16px;font:Aptos Display;">
+                </div>
+
+                <div class="card-box">
+        
+                    <input type="email" placeholder="Enter Your Email Address" style="font-size: 16px;font:Aptos Display;">
+                </div>
+
+                <div class="card-box">
+                    <input type="password" placeholder="Enter Your Password" style="font-size: 16px;font:Aptos Display;">
+                </div> 
+
+                <div class="card-box">
+              
+                    <input type="password" placeholder="Confirm Your Password" style="font-size: 16px;font:Aptos Display;">
+                </div> 
+
+                
+                <div class="login">
+                    <input type="submit" value="Login" style="font-size: 16px;font:Aptos Display;" onclick="auth()">
+                </div>
+
+                <br>
+                <div class="card-box">
+                    <span class="details">New to Edguide ?<a href="Registration.html" style="color: rgb(74, 182, 144);"> Register Yourself</a></span>
+                </div>
+                    
+
+                <!-- for background image -->
+
+                <div class="bgimage">
+                    <img src="login-page-img.png">
+                </div>
+                
+                <!-- for EdGuide Logo -->
+                
+                <div class="logoimage">
+                    <img src="logo.png" >
+                </div>
+
+            </div>
+
+        </form>
+
+    </div>
+    <script>
+        function auth(){
+          var e=document.getElementById("email").value;
+          var p=document.getElementById("password").value;
+          if(e=="admin@gmail.com" && p=="1234")
+          {
+          window.location.assign("collage.html");
+          alert("LOGIN SUCCESSFULL");
+          }
+          else
+          {
+            alert("Invalid Credemtials");
+            return;
+          }
+        }
+      </script>
+</body>
+</html>
